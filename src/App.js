@@ -1,27 +1,24 @@
-import { Form } from 'react-router-dom';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navegacion/Navbar';
 import Inicio from './components/paginas/Inicio';
 import Pga from './components/paginas/Pga';
 import Tienda from './components/paginas/Tienda';
-
-
+import Jugadores from './components/paginas/Jugadores';
 
 function App() {
   
   return (
     
-    <div className='App'>
-      <Router>
+    <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path='/' exact component= {Inicio}/>
-          <Route path='/pga' exact component= {Pga}/>
-          <Route path='/tienda' exact component= {Tienda}/>
+          <Route path='/' element= {<Inicio/>}/>
+          <Route path='/pga' element= {<Pga/>}/>
+          <Route path='/tienda' element= {<Tienda/>}/>
+          <Route path='/jugadores' element= {<Jugadores/>}/>
         </Routes>
-      </Router>
-    </div>
+    </BrowserRouter>
     
   );
 }

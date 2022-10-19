@@ -4,6 +4,7 @@ const Carousel = () => {
 
     return(
         <div>
+
                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -12,13 +13,13 @@ const Carousel = () => {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="./img/carousel1.jpg" class="d-block w-100" alt="..."/>
+      <img src="../img/carousel1.jpg" className="d-block w-100" height='500' alt="..."/>
     </div>
-    <div class="carousel-item">
-      <img src="./img/carousel2.jpg" className="d-block w-100" alt="..."/>
+    <div className="carousel-item">
+      <img src="../img/carousel3.jpg" className="d-block w-100" height='500'alt="..."/>
     </div>
-    <div class="carousel-item">
-      <img src="./img/carousel3.jpg" className="d-block w-100" alt="..."/>
+    <div className="carousel-item">
+      <img src="../img/carousel4.jpg" className="d-block w-100" height='500'alt="..."/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -32,6 +33,7 @@ const Carousel = () => {
 </div>          
         </div>
     );
+
 }
 
 
