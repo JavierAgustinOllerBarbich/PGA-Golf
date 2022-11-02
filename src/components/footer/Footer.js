@@ -23,6 +23,9 @@ const Footer = () => {
                             <li >
                                 <Link to='/jugadores' class='text-reset'>Jugadores</Link>
                             </li>
+                            <li >
+                                <Link to='/contacto' class='text-reset'>Contacto</Link>
+                            </li>
                         </ul>   
                         <ul className='col-12 col-md-3 list-unstyled'>
                             <li className='font-weight-bold mb-2'>Siguenos</li>

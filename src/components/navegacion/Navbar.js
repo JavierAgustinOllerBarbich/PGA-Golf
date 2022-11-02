@@ -30,9 +30,13 @@ function Navbar() {
         <li className="nav-item">
             <Link className="nav-link"  to='/jugadores' >Jugadores</Link>
         </li>
+        
 
       </ul>
     </div>
+    <Link to='./contacto'>
+          <i className="bi bi-person-circle"></i>
+    </Link>
   </div>
 </nav>
 

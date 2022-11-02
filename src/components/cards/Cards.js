@@ -2,13 +2,30 @@ import React from 'react';
 import { CardJugadores } from './CardJugadores';
 import './Cards.css';
 
-export const Cards = ({id}) => {
-     
-    return(
+
+ const Cards = ({ cards }) => {   
+
+        const products = cards.map( item => <cards key={cards.id} cards={cards} />);   
+        
+        return (
+            <div > { products } </div>
+         ); 
+        
+    }
+
+
+    export default Cards;
+
+
+
+
+   /* return(
         <div className='container'>
             <ul className='cards'>
                 {
-                    id.map ( p=> (
+
+                    <Cards id={productos}/>
+                    /*id.map ( p=> (
                         <li className='card-item' key={p.name}>
                             <CardJugadores url={p.url}/>
                         </li>
@@ -18,5 +35,4 @@ export const Cards = ({id}) => {
         </div>
 
 
-    )
-}
+    )*/
